@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/two.js/0.7.0-beta.3/two.min.js"></script>
+        <style>
+            body {
+                font-family: 'Helvetica', 'Arial', sans-serif;
+            }
+            div {
+                margin-top: 5px;
+            }
+            .container {
+                padding-left: 25px;
+            }
+        </style>
+    </head>
+    <body>
+         <script>
+            var two = new Two({
+                fullscreen: false,
+                autostart: true
+            }).appendTo(document.body);
+        </script>
+        <script src="swim.js"></script>
+        <div class="container">
+            <div>guard speed: <span class="gs"></span></div>
+            <div>swimmer speed: <span class="ss"></span></div>
+            <div>size: <span class="width"></span> x <span class="height"></span></div>
+            <div>frame count: <span class="frames"></span></div>
+        </div>
+    </body>
+</html>
